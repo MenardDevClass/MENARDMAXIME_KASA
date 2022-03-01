@@ -9,6 +9,12 @@ import NotFound from './pages/notFound/NotFound';
 import Error from './components/error/Error';
 import Footer from './components/footer/Footer';
 
+/**
+ * Ajout de tous les imports pour le rendu final, mais pendants les test, supression des imports superflus
+ * si tous les imports sont présents lors des tests, il apparaitra seulement le message d'erreur indiquant qu'il manque des fichiers dans le directory
+ * donc je mets les imports concernés en commentaire avec /** */
+
+
 class App extends React.Component {
   constructor(props) {
     super(props);
