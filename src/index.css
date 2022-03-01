@@ -1,0 +1,25 @@
+/* Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root,
+html {
+    font-size: 62.5%;
+}
+
+/*variables */
+
+:root {
+    --primary-color: #ff6060;
+    --color-black: #000;
+    --color-white : #fff;
+    --color-white-2: #f6f6f6;
+    --border-radius: 2.5rem;
+    --border-radius-small: 1rem;
+
+}
