@@ -23,3 +23,62 @@ html {
     --border-radius-small: 1rem;
 
 }
+
+/* styles généraux */
+body{
+    font-family:'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+ul,
+ol{
+    list-style: none;
+}
+
+::selection {
+    background-color: var(--primary-color);
+    color: var(--color-white);
+  }
+
+  #root {
+      max-width: 124rem;
+      margin: 0 auto;
+  }
+
+  .heading-1 {
+      font-size: 4.8rem;
+      color: var(--color-white);
+      z-index: 10;
+  }
+
+  .heading-3 {
+      color :var(--color-white);
+      font-weight: 400;
+      font-size: 1.8rem;
+      z-index: 10;
+  }
+
+  .main{
+      margin-bottom: 5rem;
+  }
+
+  @media (max-width: 912px){
+      .main {
+          padding: 0.2rem;
+      }
+
+      .heading-1 {
+          margin-left: 1.6rem;
+      }
+    }
+
+    @media (max-width: 375px){
+        .main{
+            margin-bottom: 0;
+        }
+    }
