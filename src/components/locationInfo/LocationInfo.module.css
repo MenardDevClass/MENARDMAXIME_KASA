@@ -1,0 +1,141 @@
+.location {
+  margin: 3rem 0;
+}
+
+.locationTop {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 2.5rem 0;
+  color: var(--primary-color);
+}
+
+.locationTitle h2 {
+  font-weight: 500;
+  font-size: 3.6rem;
+}
+
+.locationTitle span {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.locationTitle {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.locationAuthor {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.8rem;
+  min-width: min-content;
+}
+
+.locationAuthor span {
+  width: min-content;
+  text-align: right;
+  line-height: 140%;
+}
+
+.locationAuthor img {
+  height: 6.4rem;
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-left: 1rem;
+}
+
+.locationTags {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.locationTag {
+  color: var(--color-white);
+  background-color: var(--primary-color);
+  margin-right: 1rem;
+  border-radius: 1rem;
+  padding: 0.5rem 4rem;
+}
+
+.locationTitle,
+.locationAuthor,
+.locationTags,
+.locationNote {
+  flex-basis: 50%;
+}
+
+.locationNote {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.locationStars {
+  display: flex;
+}
+
+.locationStars li {
+  margin: 0 0.2rem;
+}
+
+@media (max-width: 912px) {
+  .locationTop {
+    align-items: center;
+  }
+
+  .locationTitle {
+    flex-basis: 100%;
+  }
+
+  .locationTitle h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .locationTitle span {
+    font-size: 1.4rem;
+  }
+
+  .locationAuthor {
+    font-size: 1.2rem;
+  }
+
+  .locationAuthor img {
+    height: 3.2rem;
+    width: 3.2rem;
+  }
+
+  .locationTags {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    flex-basis: 100%;
+  }
+
+  .locationTag {
+    padding: 0.25rem 3rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .locationNote {
+    margin-top: 1.5rem;
+    justify-content: flex-start;
+    flex-basis: 50%;
+  }
+
+  .locationStars li svg {
+    height: 1.8rem;
+    width: 1.8rem;
+  }
+
+  .locationAuthor {
+    margin-top: 1.5rem;
+    flex-basis: 50%;
+    order: 5;
+  }
+}
