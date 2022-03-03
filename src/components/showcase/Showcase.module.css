@@ -1,0 +1,50 @@
+/* Showcase */
+.showcase {
+  height: 22rem;
+  margin-bottom: 5rem;
+  width: 100%;
+  position: relative;
+  display: grid;
+  place-items: center;
+  border-radius: var(--border-radius);
+  background: url(../../components/assets/home-showcase.png) no-repeat center /
+    cover;
+}
+
+.showcase::after {
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: var(--color-black);
+  opacity: 0.3;
+  z-index: 1;
+  border-radius: var(--border-radius);
+}
+
+@media (max-width: 375px) {
+  .showcase {
+    height: 11rem;
+    width: 34rem;
+    place-items: center start;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+  }
+
+  .showcase h1 {
+    font-size: 2.4rem;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 280px) {
+  .showcase {
+    width: 22.5rem;
+  }
+
+  .showcase h1 {
+    font-size: 2rem;
+  }
+}
