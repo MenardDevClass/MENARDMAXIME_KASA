@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 
 class Card extends React.Component {
   render() {
+    /**  const {title,cover} = this.props; */
     return (
       <Link
         className={styles.card__container}

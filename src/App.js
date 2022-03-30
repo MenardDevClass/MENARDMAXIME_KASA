@@ -15,7 +15,7 @@ import Footer from './components/footer/Footer';
  * donc je mets les imports concernés en commentaire avec /** */
 
 
-class App extends React.Component {
+class App extends React.Component {    /**empêche de chargement de tous les props au lancement, pour n'afficher que les props concernés par la page affichée */
   constructor(props) {
     super(props);
     this.state = {
@@ -54,7 +54,7 @@ class App extends React.Component {
       return <Error />;
     }
 
-    return (
+    return (        /**définit la partie router, donc la partie ici qui va créer des URL adaptés aux pages*/
       <Router>
         <Header />
         <main className="main">

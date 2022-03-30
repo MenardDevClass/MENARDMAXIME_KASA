@@ -14,7 +14,9 @@ class Carrousel extends React.Component {
     this.goToPrevSlide = this.goToPrevSlide.bind(this);
   }
 
-  goToNextSlide() {
+/** suivant */
+
+  goToNextSlide() { 
     const lastIndex = this.props.pictures.length - 1;
     const { activeIndex } = this.state;
     const shouldResetIndex = activeIndex === lastIndex;
@@ -23,6 +25,8 @@ class Carrousel extends React.Component {
       activeIndex: index,
     });
   }
+
+/** précédent */
 
   goToPrevSlide() {
     const lastIndex = this.props.pictures.length - 1;
